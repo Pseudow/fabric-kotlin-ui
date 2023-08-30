@@ -1,6 +1,5 @@
 package net.alfheim.internal.kotlinui.dsl.scene
 
-import net.alfheim.api.kotlinui.dsl.label.*
 import net.alfheim.internal.kotlinui.dsl.label.*
 import net.minecraft.util.Identifier
 import java.util.*

@@ -1,9 +1,9 @@
 package net.alfheim.internal.kotlinui.renderer
 
+import net.alfheim.internal.kotlinui.ContainerEngineDispatcher
 import net.alfheim.internal.kotlinui.dsl.scene.Scene
 import net.alfheim.internal.kotlinui.dsl.scene.Screen
 import net.alfheim.internal.kotlinui.kit.Kit
-import net.alfheim.internal.kotlinui.ContainerEngineDispatcher
 import net.minecraft.client.gui.DrawContext
 
 class ScreenLifecycleRenderer(private val dispatcher: ContainerEngineDispatcher): SceneLifecycleRenderer {

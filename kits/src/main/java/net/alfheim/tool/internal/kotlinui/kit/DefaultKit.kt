@@ -1,8 +1,7 @@
 package net.alfheim.tool.internal.kotlinui.kit
 
-import net.alfheim.api.kotlinui.dsl.label.*
-import net.alfheim.internal.kotlinui.kit.Kit
 import net.alfheim.internal.kotlinui.dsl.label.*
+import net.alfheim.internal.kotlinui.kit.Kit
 import net.alfheim.tool.internal.kotlinui.kit.Color.BACKGROUND_COLOR
 import net.alfheim.tool.internal.kotlinui.kit.Color.BORDER_COLOR
 import net.alfheim.tool.internal.kotlinui.kit.Color.INPUT_BACKGROUND_COLOR

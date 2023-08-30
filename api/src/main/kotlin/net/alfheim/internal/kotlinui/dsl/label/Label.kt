@@ -4,8 +4,7 @@ import net.alfheim.internal.kotlinui.event.EventListener
 import net.alfheim.internal.kotlinui.event.EventTypes
 import net.minecraft.util.Identifier
 import java.awt.Color
-import java.util.EnumMap
-import kotlin.collections.ArrayList
+import java.util.*
 
 /**
  * Labels are the main core objects of all displayable components that can be rendered.
