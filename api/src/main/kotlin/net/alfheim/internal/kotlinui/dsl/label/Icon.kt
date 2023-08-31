@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier
  * @see IconSize
  * @see Label
  */
-class Icon(var resource: Identifier, var size: IconSize): Label() {
+data class Icon(var resource: Identifier, var size: IconSize): Label() {
     override var growable: Boolean = false
 }
 

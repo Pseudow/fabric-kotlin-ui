@@ -23,7 +23,7 @@ interface Button {
  *
  * @see Text
  */
-class TextButton(override var onClick: Runnable?) : Text(), Button {
+data class TextButton(override var string: String = "", override var onClick: Runnable? = null) : StringLabel(), Button {
     override var growable: Boolean = false
     override var onReleased: Runnable? = null
 

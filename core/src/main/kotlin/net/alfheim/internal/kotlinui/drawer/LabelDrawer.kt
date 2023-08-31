@@ -50,7 +50,7 @@ class LabelDrawer: Drawer {
                         0.0,
                         widthRemaining.toDouble(),
                         heightRemaining.toDouble(),
-                        (borderRound?.percentage ?: 0f) * min(insideWidth, insideHeight).toFloat(),
+                        borderRound?.radius ?: 0f,
                         borderRound?.samples ?: 8f
                     )
                 }
@@ -67,7 +67,7 @@ class LabelDrawer: Drawer {
                             0.0,
                             widthRemaining.toDouble(),
                             heightRemaining.toDouble(),
-                            (borderRound?.percentage ?: 0f) * min(insideWidth, insideHeight).toFloat(),
+                            (borderRound?.radius ?: 0f) * min(insideWidth, insideHeight).toFloat(),
                             borderRound?.samples ?: 8f
                         )
                     }

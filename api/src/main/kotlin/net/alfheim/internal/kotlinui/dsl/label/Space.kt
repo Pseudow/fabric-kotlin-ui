@@ -7,7 +7,7 @@ package net.alfheim.internal.kotlinui.dsl.label
  * @see Margin
  * @see Label
  */
-class Space(val flex: Flex): Label() {
+data class Space(val flex: Flex): Label() {
     override val growable: Boolean = false
 
     /**

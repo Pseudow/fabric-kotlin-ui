@@ -10,13 +10,10 @@ import java.net.URI
  *
  * @see Label
  */
-open class Text: Label() {
-    override var growable: Boolean = true
-
+sealed class StringLabel(open var string: String = ""): Label() {
     /**
      * Represents the string value of this text.
      */
-    var string: String = ""
 
     var bold: Boolean = false
     var italic: Boolean = false
@@ -29,6 +26,10 @@ open class Text: Label() {
     var color: Color = Color.BLACK
 }
 
+data class Text(override var string: String = ""): StringLabel() {
+    override val growable: Boolean = false
+}
+
 /**
  * Links are texts that can redirect when **being clicked** on to an **URL**.
  *
@@ -36,6 +37,6 @@ open class Text: Label() {
  * @see Text
  * @see Label
  */
-class Link: Text() {
-    var redirectURI: URI? = null
+data class Link(var redirectURI: URI? = null): StringLabel() {
+    override val growable: Boolean = false
 }

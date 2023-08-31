@@ -12,7 +12,7 @@ import java.util.*
  *
  * @see Label
  */
-class Container(val flex: Flex): Label(), Reactive<Label, Unit> {
+data class Container(val flex: Flex): Label(), Reactive<Label, Unit> {
     override var growable: Boolean = true
 
     override val storages: MutableList<Storage<Label, Unit>> = LinkedList()
@@ -89,7 +89,7 @@ class Container(val flex: Flex): Label(), Reactive<Label, Unit> {
     }
 
     fun textButton(initializer: TextButton.() -> Unit): TextButton {
-        val textButton = TextButton(null).apply(initializer)
+        val textButton = TextButton().apply(initializer)
         this.addComponent(textButton, Unit)
 
         return textButton

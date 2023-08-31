@@ -31,8 +31,8 @@ abstract class Label {
      */
     var padding: Padding = Padding()
 
-    var width: UInt? = null
-    var height: UInt? = null
+    open var width: UInt? = null
+    open var height: UInt? = null
 
     var maxWidth: UInt? = null
     var maxHeight: UInt? = null
