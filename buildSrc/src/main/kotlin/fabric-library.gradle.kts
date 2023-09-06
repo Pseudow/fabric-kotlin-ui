@@ -28,3 +28,11 @@ publishing {
         }
     }
 }
+
+tasks.jar {
+    manifest {
+        attributes (
+            "Fabric-Loom-Remap" to "true"
+        )
+    }
+}

@@ -1,7 +1,9 @@
 plugins {
-    id("fabric-library")
+    `fabric-library`
 }
 
+description = "Set of kits allowing developers to build efficiently and fast UI on Alfheim!"
+
 dependencies {
-    compileOnly(project(":api"))
+    compileOnlyApi(project(":api", configuration = "namedElements"))
 }

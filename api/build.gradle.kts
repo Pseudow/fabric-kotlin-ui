@@ -1,3 +1,5 @@
 plugins {
-    id("fabric-library")
+    `fabric-library`
 }
+
+description = "Simple api allowing developers to create different types of UI in Alfheim!"

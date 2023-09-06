@@ -24,5 +24,6 @@ dependencies {
     minecraft("com.mojang:minecraft:${properties["minecraft_version"]}")
     mappings("net.fabricmc:yarn:${properties["yarn_mappings"]}:v2")
 
-    modImplementation("net.fabricmc.fabric-api:fabric-api:${properties["fabric_version"]}")
+    modCompileOnly("net.fabricmc.fabric-api:fabric-api:${properties["fabric_version"]}")
+    modCompileOnly("net.fabricmc:fabric-loader:${properties["loader_version"]}")
 }

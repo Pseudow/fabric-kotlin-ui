@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm")
-    java
+    `java-library`
 }
 
 group = "net.alfheim.internal.kotlinui"
