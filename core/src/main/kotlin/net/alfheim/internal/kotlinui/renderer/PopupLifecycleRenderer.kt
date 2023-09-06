@@ -1,6 +1,6 @@
 package net.alfheim.internal.kotlinui.renderer
 
-import net.alfheim.internal.kotlinui.ContainerEngineDispatcher
+import net.alfheim.internal.kotlinui.drawer.engine.ContainerEngineDispatcher
 import net.alfheim.internal.kotlinui.dsl.label.Container
 import net.alfheim.internal.kotlinui.dsl.label.Flex
 import net.alfheim.internal.kotlinui.dsl.scene.Popup
