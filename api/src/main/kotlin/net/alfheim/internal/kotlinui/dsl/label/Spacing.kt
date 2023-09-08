@@ -31,17 +31,17 @@ class Border: InternalSpacing() {
     var borderRound: BorderRound? = null
 }
 
-data class BorderRound(val radius: Float, val samples: Float) {
+data class BorderRound internal constructor(val radius: Float, val samples: Float) {
     companion object {
         fun custom(radius: Float, samples: Float) = BorderRound(radius, samples)
 
-        fun small() = BorderRound(8f, 8f)
+        fun small() = this.custom(8f, 8f)
 
-        fun medium() = BorderRound(12f, 8f)
+        fun medium() = this.custom(12f, 8f)
 
-        fun large() = BorderRound(20f, 8f)
+        fun large() = this.custom(20f, 8f)
 
-        fun full() = BorderRound(30f, 8f)
+        fun full() = this.custom(30f, 8f)
     }
 }
 
